@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --header-color: #fff;
+    --nav-color: rgb(255, 255, 97);
+    --side-nav: #242526;
+    --text-color: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.4s ease;;
+}
+
+.navbar{
+    background: rgb(3, 50, 97);
+    position: sticky;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-link, .navbar-brand{
+    color: #fff;
+    cursor: pointer;
+}
+.nav-link{
+    margin-right: 1em !important;
+}
+/* Untuk Cursor diatas link */
+.nav-link:hover{
+    border-radius: 30px;
+    background:  rgba(23, 23, 23, 0.4) ;
+    color: #f2f6e9;
+}
+.navbar-collapse{
+    justify-content: flex-end;
+}
+header {
+    background-image: url("Sakura_wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 115vh;
+}
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+.navbar-nav .nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-links li{
+    margin: 0 5px;
+    list-style: none;
+}
+/* Tesst */
+.navbar-nav li a{
+    position: relative;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.navbar-nav li a::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 2px; 
+    width: 60px;
+    background: #fff;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav li:hover a::before{
+    opacity: 1;
+}
+
+
+/* GRID */
+.col-auto{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+/* footer */
+.page-footer{
+    background-color: rgb(3, 50, 97);
+    color: #fff;
+}
+.footer-copyright{
+    background-color: rgba(3, 50, 97, 0.9);
+    color: #a7a7a7;
+    padding: 60px;
+}
